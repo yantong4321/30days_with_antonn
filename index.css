@@ -1,0 +1,727 @@
+body {
+  background-image: url("real.image/real.bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+/* 그리드 설계 */
+.grid-1 {
+  display: grid;
+  width: 90vw;
+  max-width: 900px;
+  margin: 2% auto;
+  z-index: 1;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 25px;
+  s grid-template-areas:
+    "t t t"
+    "d1 d2 d3"
+    "d4 d5 d6"
+    "d7 d8 d9"
+    "d10 d11 d12"
+    "d13 d14 d15"
+    "d16 d17 d18"
+    "d19 d20 d21"
+    "d22 d23 d24"
+    "d25 d26 d27"
+    "d28 d29 d30";
+}
+
+@media only screen and (min-width: 500px) {
+
+  .grid-1 {
+    /* 너비를 기준으로 높이를 계산 */
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "t     t     t     d1      d2      d3"
+      "t     t     t     d4      d5      d6"
+      "d7    d8    d9    d10     d11     d12"
+      "d13   d14   d15   d16     d17     d18"
+      "d19   d20   d21   d22     d23     d24"
+      "d25   d26   d27   d28     d29     d30";
+  }
+
+}
+
+/* flex 속성 */
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-baseline {
+  align-items: baseline;
+}
+
+.title {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+
+  grid-area: t;
+}
+
+.title img {
+  width: 90%;
+  height: auto;
+}
+
+/* door styles */
+.grid-1 input {
+  display: none;
+}
+
+label {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  height: 120px;
+}
+
+/* flex 속성 */
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-baseline {
+  align-items: baseline;
+}
+
+.title {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+
+  grid-area: t;
+}
+
+.title img {
+  width: 90%;
+  height: auto;
+}
+
+
+
+/* door styles */
+.grid-1 input {
+  display: none;
+}
+
+label {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  height: 120px;
+}
+
+/* flex 속성 */
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-baseline {
+  align-items: baseline;
+}
+
+.title {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+
+  grid-area: t;
+}
+
+.title img {
+  width: 90%;
+  height: auto;
+}
+
+/* 그리드 별 배경 이미지 */
+.day-1 {
+  grid-area: d1;
+  background: url("real.image/and/and31.jpg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-1 .back {
+  background-image: url("real.image/mong/mong31.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-2 {
+  grid-area: d2;
+  background: url("real.image/and/and2.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-2 .back {
+  background-image: url("real.image/mong/mong2.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-3 {
+  grid-area: d3;
+  background: url("real.image/and/and3.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-3 .back {
+  background-image: url("real.image/mong/mong3.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-4 {
+  grid-area: d4;
+  background: url("real.image/and/and4.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-4 .back {
+  background-image: url("real.image/mong/mong4.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-5 {
+  grid-area: d5;
+  background: url("real.image/and/and5.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-5 .back {
+  background-image: url("real.image/mong/mong5.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-6 {
+  grid-area: d6;
+  background: url("real.image/and/and6.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-6 .back {
+  background-image: url("real.image/mong/mong6.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-7 {
+  grid-area: d7;
+  background: url("real.image/and/and7.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-7 .back {
+  background-image: url("real.image/mong/mong7.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-8 {
+  grid-area: d8;
+  background: url("real.image/and/and8.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-8 .back {
+  background-image: url("real.image/mong/mong8.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-9 {
+  grid-area: d9;
+  background: url("real.image/and/and9.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-9 .back {
+  background-image: url("real.image/mong/mong9.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-10 {
+  grid-area: d10;
+  background: url("real.image/and/and10.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-10 .back {
+  background-image: url("real.image/mong/mong10.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-11 {
+  grid-area: d11;
+  background: url("real.image/and/and11.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-11 .back {
+  background-image: url("real.image/mong/mong1.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-12 {
+  grid-area: d12;
+  background: url("real.image/and/and12.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-12 .back {
+  background-image: url("real.image/mong/mong12.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-13 {
+  grid-area: d13;
+  background: url("real.image/and/and13.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-13 .back {
+  background-image: url("real.image/mong/mong13.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-14 {
+  grid-area: d14;
+  background: url("real.image/and/and14.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-14 .back {
+  background-image: url("real.image/mong/mong14.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-15 {
+  grid-area: d15;
+  background: url("real.image/and/and15.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-15 .back {
+  background-image: url("real.image/mong/mong30.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-16 {
+  grid-area: d16;
+  background: url("real.image/and/and16.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-16 .back {
+  background-image: url("real.image/mong/mong16.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-17 {
+  grid-area: d17;
+  background: url("real.image/and/and23.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-17 .back {
+  background-image: url("real.image/mong/mong17.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-18 {
+  grid-area: d18;
+  background: url("real.image/and/and18.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-18 .back {
+  background-image: url("real.image/mong/mong18.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-19 {
+  grid-area: d19;
+  background: url("real.image/and/and19.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-19 .back {
+  background-image: url("real.image/mong/mong19.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-20 {
+  grid-area: d20;
+  background: url("real.image/and/and20.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-20 .back {
+  background-image: url("real.image/mong/mong20.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-21 {
+  grid-area: d21;
+  background: url("real.image/and/and21.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-21 .back {
+  background-image: url("real.image/mong/mong21.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-22 {
+  grid-area: d22;
+  background: url("real.image/and/and22.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-22 .back {
+  background-image: url("real.image/mong/mong22.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-23 {
+  grid-area: d23;
+  background: url("real.image/and/and17.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-23 .back {
+  background-image: url("real.image/mong/mong23.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-24 {
+  grid-area: d24;
+  background: url("real.image/and/and24.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-24 .back {
+  background-image: url("real.image/mong/mong24.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-25 {
+  grid-area: d25;
+  background: url("real.image/and/and25.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-25 .back {
+  background-image: url("real.image/mong/mong25.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-26 {
+  grid-area: d26;
+  background: url("real.image/and/and26.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-26 .back {
+  background-image: url("real.image/mong/mong26.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-27 {
+  grid-area: d27;
+  background: url("real.image/and/and27.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-27 .back {
+  background-image: url("real.image/mong/mong27.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-28 {
+  grid-area: d28;
+  background: url("real.image/and/and28.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-28 .back {
+  background-image: url("real.image/mong/mong28.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-29 {
+  grid-area: d29;
+  background: url("real.image/and/and29.jpeg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-29 .back {
+  background-image: url("real.image/mong/mong29.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-30 {
+  grid-area: d30;
+  background: url("real.image/and/and30.jpg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-30 .back {
+  background-image: url("real.image/mong/mong15.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+/* 확대 및 회전 애니메이션 */
+@keyframes zoomAndRotate {
+  from {
+    transform: scale(0) rotateY(0deg);
+  }
+
+  to {
+    transform: scale(1) rotateY(360deg);
+  }
+}
+
+/* 애니메이션 적용 */
+.zoomIn {
+  animation: zoomAndRotate 0.5s ease forwards;
+}
+
+
+.hidden {
+  visibility: hidden;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.modal-content {
+  width: 340px;
+  height: 347px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 이미지와 텍스트가 있는 카드를 위한 스타일 */
+.modal-content div {
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+.modal-content p {
+  width: 300px;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-weight: bold;
+  font-size: 17px;
+  word-break: keep-all;
+}
+
+/* 카드 앞면 */
+.door {
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: all 300ms;
+  border-radius: 10px;
+}
+
+.date-num {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: white;
+}
+
+/* 카드 뒷면 */
+.door div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+
+  border-radius: 6px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* 카드 뒤집기 애니메이션 */
+.door .back {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: rotateY(180deg);
+}
+
+:checked+.door {
+  transform: rotateY(180deg);
+}
