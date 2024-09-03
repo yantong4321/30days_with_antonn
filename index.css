@@ -21,7 +21,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-gap: 25px;
-  s grid-template-areas:
+  grid-template-areas:
     "t t t"
     "d1 d2 d3"
     "d4 d5 d6"
